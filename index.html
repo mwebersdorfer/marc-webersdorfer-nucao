@@ -8,7 +8,8 @@
 <meta name="robots" content="noindex">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2376236D'/%3E%3Cpath d='M 26 84 L 26 30 L 50 58 L 74 30 L 74 84' fill='none' stroke='%23FFA6FF' stroke-width='18' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Red+Hat+Display:wght@500;700;900&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --sand:#F3E9E7;
@@ -29,31 +30,32 @@
   html{scroll-behavior:smooth;}
   body{
     margin:0;
-    font-family:'Red Hat Text',sans-serif;
+    font-family:'Inter',sans-serif;
     color:var(--ink);
     background:var(--sand);
     line-height:1.6;
     font-size:17px;
   }
-  h1{font-family:'Baloo 2',sans-serif;margin:0;line-height:1.05;}
-  h2,h3{font-family:'Red Hat Display',sans-serif;font-weight:700;margin:0;line-height:1.1;}
+  h1{font-family:'Unbounded',sans-serif;font-weight:800;margin:0;line-height:1.08;letter-spacing:-.01em;}
+  h2,h3{font-family:'Unbounded',sans-serif;font-weight:800;margin:0;line-height:1.15;letter-spacing:-.01em;}
+  h3{font-weight:700;}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
   section{padding:64px 0;}
   .eyebrow{
     display:inline-block;
-    font-family:'Red Hat Display',sans-serif;
+    font-family:'Inter',sans-serif;
     font-size:.85rem;font-weight:700;
     padding:7px 18px;border-radius:999px;
     background:var(--pink);color:var(--cocoa);
   }
   .kicker{
-    font-family:'Red Hat Display',sans-serif;font-weight:700;
+    font-family:'Inter',sans-serif;font-weight:700;
     font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;
     color:var(--plum);margin-bottom:10px;display:block;
   }
   .btn{
     display:inline-flex;align-items:center;gap:8px;
-    font-family:'Red Hat Display',sans-serif;font-weight:700;font-size:1rem;
+    font-family:'Inter',sans-serif;font-weight:700;font-size:1rem;
     padding:14px 28px;border-radius:999px;border:none;cursor:pointer;
     text-decoration:none;transition:transform .15s ease;
   }
@@ -78,10 +80,10 @@
   .hero-portrait::after{content:"";position:absolute;width:230px;height:170px;border-radius:58% 42% 38% 62% / 48% 55% 45% 52%;background:var(--plum);right:155px;bottom:0;transform:rotate(-10deg);opacity:.9;}
   .hero-portrait img{position:absolute;z-index:2;right:-30px;bottom:-96px;width:min(512px,50vw);max-width:none;height:auto;display:block;}
   .hero .eyebrow{margin-bottom:24px;background:var(--plum);color:var(--white);}
-  .hero h1{font-size:clamp(2.2rem,5.2vw,3.5rem);font-weight:700;max-width:640px;}
+  .hero h1{font-size:clamp(1.9rem,4.4vw,3.1rem);font-weight:800;max-width:660px;}
   .hero h1 em{font-style:normal;color:var(--plum);}
   .hero .sub{
-    font-family:'Red Hat Display',sans-serif;font-weight:500;
+    font-family:'Inter',sans-serif;font-weight:500;
     font-size:clamp(1.05rem,2.2vw,1.25rem);
     color:var(--raspberry);margin-top:20px;max-width:540px;
   }
@@ -95,18 +97,18 @@
   }
 
   /* ---------- WARUM ---------- */
-  .intro h2{font-size:clamp(1.6rem,3.4vw,2.2rem);max-width:20ch;}
+  .intro h2{font-size:clamp(1.35rem,2.9vw,1.9rem);max-width:20ch;}
   .intro p{margin-top:18px;max-width:62ch;font-size:1.05rem;}
   .intro .punch{
-    font-family:'Red Hat Display',sans-serif;font-weight:700;font-size:1.15rem;
+    font-family:'Inter',sans-serif;font-weight:700;font-size:1.15rem;
     color:var(--plum);border-left:5px solid var(--pink);padding-left:16px;margin-top:26px;
   }
-  .pedigree-caption{margin-top:42px;font-family:'Red Hat Display',sans-serif;font-weight:700;font-size:.95rem;color:var(--cocoa);}
+  .pedigree-caption{margin-top:42px;font-family:'Inter',sans-serif;font-weight:700;font-size:.95rem;color:var(--cocoa);}
   .pedigree-row{margin-top:14px;display:flex;flex-wrap:wrap;gap:12px;}
   .pedigree-chip{
     display:flex;align-items:center;gap:8px;background:var(--white);
     border:2px solid var(--cocoa);border-radius:999px;padding:9px 18px 9px 12px;
-    font-family:'Red Hat Display',sans-serif;font-weight:700;font-size:.92rem;
+    font-family:'Inter',sans-serif;font-weight:700;font-size:.92rem;
   }
   .pedigree-chip .dot{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;}
   .dot-a{background:var(--rose);} .dot-b{background:var(--pink);} .dot-c{background:var(--sand-deep);} .dot-d{background:var(--pink);}
@@ -114,23 +116,24 @@
 
   .card-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px;}
   .card{border-radius:18px;padding:26px 24px;}
-  .card h3{font-size:1.2rem;margin-bottom:10px;}
+  .card h3{font-size:1.02rem;margin-bottom:10px;}
   .card p{font-size:.95rem;margin:0;}
   .card-berry{background:var(--plum);color:var(--white);}
   .card-pist{background:var(--pink);color:var(--cocoa);}
   .card-matcha{background:var(--rose);color:var(--cocoa);}
 
   /* ---------- ERFOLGE ---------- */
-  .erfolge{background:var(--cocoa);color:var(--white);}
-  .erfolge h2{font-size:clamp(1.6rem,3.4vw,2.2rem);text-align:center;margin-bottom:8px;}
-  .erfolge .lead{text-align:center;color:var(--rose);font-family:'Red Hat Display',sans-serif;font-weight:500;margin:0 0 36px;}
+  .erfolge{background:var(--hero-pink);color:var(--cocoa);}
+  .erfolge h2{color:var(--raspberry);}
+  .erfolge h2{font-size:clamp(1.35rem,2.9vw,1.9rem);text-align:center;margin-bottom:8px;}
+  .erfolge .lead{text-align:center;color:var(--plum);font-family:'Inter',sans-serif;font-weight:500;margin:0 0 36px;}
   .erfolge-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-  .erfolg-card{background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.2);border-radius:20px;padding:22px;}
-  .erfolg-card .big{font-family:'Baloo 2',sans-serif;font-size:1.65rem;font-weight:700;color:var(--pink);margin-bottom:6px;line-height:1.15;}
+  .erfolg-card{background:var(--white);border-radius:20px;padding:24px;box-shadow:0 6px 18px rgba(118,35,109,.08);}
+  .erfolg-card .big{font-family:'Unbounded',sans-serif;font-size:1.35rem;font-weight:800;color:var(--raspberry);margin-bottom:6px;line-height:1.15;}
   .erfolg-card p{margin:0;font-size:.95rem;}
 
   /* ---------- GALERIE ---------- */
-  .gallery h2{font-size:clamp(1.6rem,3.4vw,2.2rem);text-align:center;}
+  .gallery h2{font-size:clamp(1.35rem,2.9vw,1.9rem);text-align:center;}
   .gallery .hint{text-align:center;font-size:1rem;margin:12px auto 0;max-width:58ch;}
   .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:200px;grid-auto-flow:dense;gap:14px;margin-top:30px;}
   .gallery-item{border-radius:16px;overflow:hidden;background:var(--sand-deep);}
@@ -140,52 +143,52 @@
 
   /* ---------- GEBIET ---------- */
   .gebiet{background:var(--white);}
-  .gebiet h2{font-size:clamp(1.6rem,3.4vw,2.2rem);max-width:22ch;}
+  .gebiet h2{font-size:clamp(1.35rem,2.9vw,1.9rem);max-width:22ch;}
   .gebiet .intro-p{margin-top:16px;max-width:62ch;font-size:1.05rem;}
   .gebiet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px;}
   .region{border-radius:18px;padding:24px;border:2px solid var(--cocoa);background:var(--sand);}
   .region .tag{
-    display:inline-block;font-family:'Red Hat Display',sans-serif;font-weight:700;font-size:.78rem;
+    display:inline-block;font-family:'Inter',sans-serif;font-weight:700;font-size:.78rem;
     padding:5px 12px;border-radius:999px;margin-bottom:14px;
   }
-  .region h3{font-size:1.3rem;margin-bottom:8px;}
+  .region h3{font-size:1.1rem;margin-bottom:8px;}
   .region p{margin:0;font-size:.95rem;}
   .tag-home{background:var(--plum);color:var(--white);}
   .tag-near{background:var(--pink);color:var(--cocoa);}
   .tag-new{background:var(--cocoa);color:var(--white);}
 
   /* ---------- 100 TAGE ---------- */
-  .plan h2{font-size:clamp(1.6rem,3.4vw,2.2rem);text-align:center;}
+  .plan h2{font-size:clamp(1.35rem,2.9vw,1.9rem);text-align:center;}
   .plan .lead{text-align:center;margin:12px auto 0;max-width:56ch;font-size:1.05rem;}
   .phases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px;}
   .phase{background:var(--white);border-radius:20px;padding:26px 24px;display:flex;flex-direction:column;border-top:8px solid var(--plum);}
   .phase:nth-child(2){border-top-color:var(--pink);}
   .phase:nth-child(3){border-top-color:var(--cocoa);}
-  .phase .days{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:1.5rem;color:var(--plum);line-height:1;}
-  .phase h3{font-size:1.1rem;margin:6px 0 14px;}
+  .phase .days{font-family:'Unbounded',sans-serif;font-weight:800;font-size:1.3rem;color:var(--plum);line-height:1;}
+  .phase h3{font-size:.98rem;margin:6px 0 14px;}
   .phase ul{margin:0;padding-left:18px;font-size:.93rem;}
   .phase li{margin-bottom:8px;}
   .phase .result{margin-top:auto;padding-top:14px;border-top:1px dashed rgba(42,29,22,.25);font-size:.9rem;font-weight:600;color:var(--plum);}
 
   /* ---------- ECKEN & KANTEN ---------- */
   .kanten{background:var(--sand-deep);}
-  .kanten h2{font-size:clamp(1.6rem,3.4vw,2.2rem);max-width:22ch;}
+  .kanten h2{font-size:clamp(1.35rem,2.9vw,1.9rem);max-width:22ch;}
   .kanten .intro-p{margin-top:14px;max-width:60ch;font-size:1.05rem;}
   .kanten-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px;}
   .kante{background:var(--white);border-radius:18px;padding:24px;}
-  .kante h3{font-size:1.15rem;margin-bottom:8px;}
+  .kante h3{font-size:1.02rem;margin-bottom:8px;}
   .kante p{margin:0;font-size:.95rem;}
 
   /* ---------- CV ---------- */
   .cv-cta{background:var(--pink);border-radius:28px;padding:40px 36px;text-align:center;}
-  .cv-cta h2{font-size:clamp(1.4rem,3vw,1.9rem);max-width:24ch;margin:0 auto;color:var(--cocoa);}
+  .cv-cta h2{font-size:clamp(1.2rem,2.6vw,1.6rem);max-width:24ch;margin:0 auto;color:var(--cocoa);}
   .cv-cta p{margin:12px auto 0;font-size:1rem;max-width:48ch;}
   .cv-cta .btn{margin-top:22px;}
 
   /* ---------- KONTAKT ---------- */
   .contact{background:var(--cocoa-deep);color:var(--white);text-align:center;}
-  .contact h2{font-size:clamp(1.7rem,3.6vw,2.3rem);}
-  .contact p.tag{margin-top:10px;color:var(--pink);font-family:'Red Hat Display',sans-serif;font-weight:500;}
+  .contact h2{font-size:clamp(1.5rem,3.2vw,2rem);}
+  .contact p.tag{margin-top:10px;color:var(--pink);font-family:'Inter',sans-serif;font-weight:500;}
   .contact .cta-row{margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
   .contact .details{margin-top:30px;font-size:.92rem;opacity:.75;}
   footer{background:#1F0F08;color:rgba(255,255,255,.55);text-align:center;padding:20px 0;font-size:.8rem;}
