@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marc Webersdorfer – Field Sales Manager für nucao</title>
+<meta name="description" content="Marc Webersdorfer – 25+ Jahre FMCG-Vertrieb, 12 Jahre Field Sales im LEH. Bewerbung als Field Sales Manager für nucao in Karlsruhe, Mannheim/Heidelberg und Freiburg.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2376236D'/%3E%3Cpath d='M 26 84 L 26 30 L 50 58 L 74 30 L 74 84' fill='none' stroke='%23FFA6FF' stroke-width='18' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Red+Hat+Display:wght@500;700;900&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sand:#F3E9E7;
+    --sand-deep:#EADAD6;
+    --cocoa:#381D12;
+    --cocoa-deep:#2A150C;
+    --ink:#381D12;
+    --plum:#76236D;
+    --plum-deep:#5A1A53;
+    --pink:#FFA6FF;
+    --rose:#F9D6F3;
+    --white:#FFFFFF;
+    --maxw:940px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Red Hat Text',sans-serif;
+    color:var(--ink);
+    background:var(--sand);
+    line-height:1.6;
+    font-size:17px;
+  }
+  h1{font-family:'Baloo 2',sans-serif;margin:0;line-height:1.05;}
+  h2,h3{font-family:'Red Hat Display',sans-serif;font-weight:700;margin:0;line-height:1.1;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  section{padding:64px 0;}
+  .eyebrow{
+    display:inline-block;
+    font-family:'Red Hat Display',sans-serif;
+    font-size:.85rem;font-weight:700;
+    padding:7px 18px;border-radius:999px;
+    background:var(--pink);color:var(--cocoa);
+  }
+  .kicker{
+    font-family:'Red Hat Display',sans-serif;font-weight:700;
+    font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--plum);margin-bottom:10px;display:block;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Red Hat Display',sans-serif;font-weight:700;font-size:1rem;
+    padding:14px 28px;border-radius:999px;border:none;cursor:pointer;
+    text-decoration:none;transition:transform .15s ease;
+  }
+  .btn:hover{transform:translateY(-2px) rotate(-.5deg);}
+  .btn-berry{background:var(--plum);color:var(--white);}
+  .btn-sand{background:var(--pink);color:var(--cocoa);}
+  .btn-outline{background:transparent;color:var(--white);border:2px solid var(--white);}
+
+  /* ---------- HERO ---------- */
+  .hero{background:var(--plum);color:var(--white);padding:60px 0 90px;position:relative;overflow:hidden;}
+  .hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      radial-gradient(circle at 88% 12%, rgba(255,166,255,.30), transparent 45%),
+      radial-gradient(circle at 6% 85%, rgba(56,29,18,.35), transparent 40%);
+  }
+  .hero .inner{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);align-items:center;gap:20px;min-height:440px;}
+  .hero-copy{position:relative;z-index:3;padding:10px 0;}
+  .hero-portrait{position:relative;align-self:stretch;min-height:390px;z-index:2;}
+  .hero-portrait::before{content:"";position:absolute;width:310px;height:310px;border-radius:48% 52% 62% 38% / 42% 40% 60% 58%;background:var(--pink);right:-65px;top:20px;transform:rotate(10deg);opacity:.96;}
+  .hero-portrait::after{content:"";position:absolute;width:230px;height:170px;border-radius:58% 42% 38% 62% / 48% 55% 45% 52%;background:var(--cocoa);right:155px;bottom:0;transform:rotate(-10deg);opacity:.9;}
+  .hero-portrait img{position:absolute;z-index:2;right:-30px;bottom:-75px;width:min(512px,50vw);max-width:none;height:auto;display:block;filter:drop-shadow(0 14px 18px rgba(20,10,5,.25));}
+  .hero .eyebrow{margin-bottom:24px;}
+  .hero h1{font-size:clamp(2.2rem,5.2vw,3.5rem);font-weight:700;max-width:640px;}
+  .hero h1 em{font-style:normal;color:var(--pink);}
+  .hero .sub{
+    font-family:'Red Hat Display',sans-serif;font-weight:500;
+    font-size:clamp(1.05rem,2.2vw,1.25rem);
+    color:var(--rose);margin-top:20px;max-width:540px;
+  }
+  .hero .cta-row{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;}
+
+  /* wavy chocolate-bar edge */
+  .scallop{position:relative;height:34px;background:var(--plum);}
+  .scallop::after{
+    content:"";position:absolute;left:0;right:0;bottom:0;height:34px;
+    background:radial-gradient(circle at 10px 0, transparent 12px, var(--sand) 13px) 0 -6px / 40px 40px repeat-x;
+  }
+
+  /* ---------- WARUM ---------- */
+  .intro h2{font-size:clamp(1.6rem,3.4vw,2.2rem);max-width:20ch;}
+  .intro p{margin-top:18px;max-width:62ch;font-size:1.05rem;}
+  .intro .punch{
+    font-family:'Red Hat Display',sans-serif;font-weight:700;font-size:1.15rem;
+    color:var(--plum);border-left:5px solid var(--pink);padding-left:16px;margin-top:26px;
+  }
+  .pedigree-caption{margin-top:42px;font-family:'Red Hat Display',sans-serif;font-weight:700;font-size:.95rem;color:var(--cocoa);}
+  .pedigree-row{margin-top:14px;display:flex;flex-wrap:wrap;gap:12px;}
+  .pedigree-chip{
+    display:flex;align-items:center;gap:8px;background:var(--white);
+    border:2px solid var(--cocoa);border-radius:999px;padding:9px 18px 9px 12px;
+    font-family:'Red Hat Display',sans-serif;font-weight:700;font-size:.92rem;
+  }
+  .pedigree-chip .dot{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;}
+  .dot-a{background:var(--rose);} .dot-b{background:var(--pink);} .dot-c{background:var(--sand-deep);} .dot-d{background:var(--pink);}
+  .pedigree-chip.next{background:var(--plum);color:var(--white);border-color:var(--plum);}
+
+  .card-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px;}
+  .card{border-radius:18px;padding:26px 24px;}
+  .card h3{font-size:1.2rem;margin-bottom:10px;}
+  .card p{font-size:.95rem;margin:0;}
+  .card-berry{background:var(--plum);color:var(--white);}
+  .card-pist{background:var(--pink);color:var(--cocoa);}
+  .card-matcha{background:var(--rose);color:var(--cocoa);}
+
+  /* ---------- ERFOLGE ---------- */
+  .erfolge{background:var(--cocoa);color:var(--white);}
+  .erfolge h2{font-size:clamp(1.6rem,3.4vw,2.2rem);text-align:center;margin-bottom:8px;}
+  .erfolge .lead{text-align:center;color:var(--rose);font-family:'Red Hat Display',sans-serif;font-weight:500;margin:0 0 36px;}
+  .erfolge-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .erfolg-card{background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.2);border-radius:20px;padding:22px;}
+  .erfolg-card .big{font-family:'Baloo 2',sans-serif;font-size:1.65rem;font-weight:700;color:var(--pink);margin-bottom:6px;line-height:1.15;}
+  .erfolg-card p{margin:0;font-size:.95rem;}
+
+  /* ---------- GALERIE ---------- */
+  .gallery h2{font-size:clamp(1.6rem,3.4vw,2.2rem);text-align:center;}
+  .gallery .hint{text-align:center;font-size:1rem;margin:12px auto 0;max-width:58ch;}
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:200px;grid-auto-flow:dense;gap:14px;margin-top:30px;}
+  .gallery-item{border-radius:16px;overflow:hidden;background:var(--sand-deep);}
+  .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;}
+  .gallery-item.tall{grid-row:span 2;}
+  .gallery-item.wide{grid-column:span 2;}
+
+  /* ---------- GEBIET ---------- */
+  .gebiet{background:var(--white);}
+  .gebiet h2{font-size:clamp(1.6rem,3.4vw,2.2rem);max-width:22ch;}
+  .gebiet .intro-p{margin-top:16px;max-width:62ch;font-size:1.05rem;}
+  .gebiet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px;}
+  .region{border-radius:18px;padding:24px;border:2px solid var(--cocoa);background:var(--sand);}
+  .region .tag{
+    display:inline-block;font-family:'Red Hat Display',sans-serif;font-weight:700;font-size:.78rem;
+    padding:5px 12px;border-radius:999px;margin-bottom:14px;
+  }
+  .region h3{font-size:1.3rem;margin-bottom:8px;}
+  .region p{margin:0;font-size:.95rem;}
+  .tag-home{background:var(--plum);color:var(--white);}
+  .tag-near{background:var(--pink);color:var(--cocoa);}
+  .tag-new{background:var(--cocoa);color:var(--white);}
+
+  /* ---------- 100 TAGE ---------- */
+  .plan h2{font-size:clamp(1.6rem,3.4vw,2.2rem);text-align:center;}
+  .plan .lead{text-align:center;margin:12px auto 0;max-width:56ch;font-size:1.05rem;}
+  .phases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px;}
+  .phase{background:var(--white);border-radius:20px;padding:26px 24px;display:flex;flex-direction:column;border-top:8px solid var(--plum);}
+  .phase:nth-child(2){border-top-color:var(--pink);}
+  .phase:nth-child(3){border-top-color:var(--cocoa);}
+  .phase .days{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:1.5rem;color:var(--plum);line-height:1;}
+  .phase h3{font-size:1.1rem;margin:6px 0 14px;}
+  .phase ul{margin:0;padding-left:18px;font-size:.93rem;}
+  .phase li{margin-bottom:8px;}
+  .phase .result{margin-top:auto;padding-top:14px;border-top:1px dashed rgba(42,29,22,.25);font-size:.9rem;font-weight:600;color:var(--plum);}
+
+  /* ---------- ECKEN & KANTEN ---------- */
+  .kanten{background:var(--sand-deep);}
+  .kanten h2{font-size:clamp(1.6rem,3.4vw,2.2rem);max-width:22ch;}
+  .kanten .intro-p{margin-top:14px;max-width:60ch;font-size:1.05rem;}
+  .kanten-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px;}
+  .kante{background:var(--white);border-radius:18px;padding:24px;}
+  .kante h3{font-size:1.15rem;margin-bottom:8px;}
+  .kante p{margin:0;font-size:.95rem;}
+
+  /* ---------- CV ---------- */
+  .cv-cta{background:var(--pink);border-radius:28px;padding:40px 36px;text-align:center;}
+  .cv-cta h2{font-size:clamp(1.4rem,3vw,1.9rem);max-width:24ch;margin:0 auto;color:var(--cocoa);}
+  .cv-cta p{margin:12px auto 0;font-size:1rem;max-width:48ch;}
+  .cv-cta .btn{margin-top:22px;}
+
+  /* ---------- KONTAKT ---------- */
+  .contact{background:var(--cocoa-deep);color:var(--white);text-align:center;}
+  .contact h2{font-size:clamp(1.7rem,3.6vw,2.3rem);}
+  .contact p.tag{margin-top:10px;color:var(--pink);font-family:'Red Hat Display',sans-serif;font-weight:500;}
+  .contact .cta-row{margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .contact .details{margin-top:30px;font-size:.92rem;opacity:.75;}
+  footer{background:#1F0F08;color:rgba(255,255,255,.55);text-align:center;padding:20px 0;font-size:.8rem;}
+
+  @media (max-width:760px){
+    section{padding:52px 0;}
+    .card-row,.erfolge-grid,.gebiet-grid,.phases,.kanten-grid{grid-template-columns:1fr;}
+    .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;}
+    .gallery-item.wide,.gallery-item:last-child{grid-column:span 2;}
+    .hero .inner{grid-template-columns:1fr;gap:6px;min-height:0;}
+    .hero-portrait{min-height:310px;margin-top:10px;}
+    .hero-portrait img{width:min(390px,88vw);right:-35px;bottom:-90px;}
+    .hero-portrait::before{width:240px;height:240px;right:-55px;top:18px;}
+    .hero-portrait::after{width:180px;height:125px;right:120px;bottom:10px;}
+    .hero .cta-row{flex-direction:column;align-items:flex-start;}
+    .cv-cta{padding:32px 22px;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Field Sales Manager · Karlsruhe · Mannheim/Heidelberg · Freiburg</span>
+        <h1>Ich mache nucao im Südwesten <em>sichtbar.</em></h1>
+        <div class="sub">25+ Jahre FMCG-Vertrieb · 12 Jahre Field Sales direkt am Regal · Snack- und Süßwaren-Herkunft inklusive.</div>
+        <div class="cta-row">
+          <a href="#erfolge" class="btn btn-sand">Was ich geschafft habe</a>
+          <a href="#kontakt" class="btn btn-outline">Let's talk</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <img src="./marc-hero.png" alt="Marc Webersdorfer">
+      </div>
+    </div>
+  </header>
+  <div class="scallop"></div>
+
+  <!-- WARUM NUCAO -->
+  <section class="intro">
+    <div class="wrap">
+      <span class="kicker">Warum nucao?</span>
+      <h2>Ich kenne die großen Player von innen. Jetzt will ich sie herausfordern.</h2>
+      <p>Angefangen habe ich bei Wolf Bergstraße, als dort noch Pom-Bär hergestellt wurde. Danach Intersnack mit Chio Chips, dann 23 Jahre Procter &amp; Gamble – mit Pringles, Wick Bonbons und später Lenor, Ariel und Gillette. Ich weiß, wie Marktführer um jeden Regalmeter kämpfen.</p>
+      <p>Und ich weiß, wo sie angreifbar sind: bei selbstständigen Kaufleuten, die ihr Sortiment vom Markt nebenan unterscheiden wollen. Bei Kunden, die nach Bio, vegan und fair fragen. Und am Regal, wo eine gute Geschichte oft mehr bewegt als der nächste Rabatt.</p>
+      <p>Bei nucao ist noch nicht alles fertig gebaut. Genau das reizt mich: raus zum Kunden, Händler überzeugen, weiße Flecken schließen und eine Marke im Handel größer machen.</p>
+      <p class="punch">Am meisten Spaß macht mir Vertrieb genau dort, wo der Kunde noch nicht überzeugt ist.</p>
+
+      <p class="pedigree-caption">Mein Weg durchs Süßwaren- und Snackregal:</p>
+      <div class="pedigree-row">
+        <div class="pedigree-chip"><span class="dot dot-a">🐻</span> Wolf Bergstraße · Pom-Bär</div>
+        <div class="pedigree-chip"><span class="dot dot-b">🥔</span> Intersnack · Chio Chips</div>
+        <div class="pedigree-chip"><span class="dot dot-c">🥫</span> P&amp;G · Pringles &amp; Wick</div>
+        <div class="pedigree-chip next"><span class="dot dot-d">🍫</span> Als Nächstes: nucao</div>
+      </div>
+    </div>
+
+    <div class="wrap card-row">
+      <div class="card card-berry">
+        <h3>Überzeugen statt abarbeiten</h3>
+        <p>Ich überzeuge Händler von Dingen, die sie nicht angefragt haben – etwa die Umstellung von Gillette-Klingen bei Edeka von der Bedientheke in die Freiwahl.</p>
+      </div>
+      <div class="card card-pist">
+        <h3>Neukunden ohne Rückenwind</h3>
+        <p>Bei thomas beteiligungen habe ich ein Kundennetz in einer für mich neuen Branche komplett neu aufgebaut – ohne bekannte Marke im Rücken.</p>
+      </div>
+      <div class="card card-matcha">
+        <h3>Mein Gebiet, mein Business</h3>
+        <p>80+ Verbrauchermärkte eigenverantwortlich geführt: Touren, Bestellmengen, Platzierungen und Ziele hatte ich selbst im Griff.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ERFOLGE -->
+  <section class="erfolge" id="erfolge">
+    <div class="wrap">
+      <h2>Zahlen statt Behauptungen</h2>
+      <p class="lead">Was am Regal passiert, lässt sich messen.</p>
+      <div class="erfolge-grid">
+        <div class="erfolg-card">
+          <div class="big">Nr. 1 in Deutschland</div>
+          <p>Beim Lenor-Unstoppables-Launch: 120 Zweitplatzierungen allein in meinem Gebiet – durch frühe Termine mit den Schlüsselkunden.</p>
+        </div>
+        <div class="erfolg-card">
+          <div class="big">90 % Distribution in 2 Wochen</div>
+          <p>Bei Produktneueinführungen – die Vorgabe waren 4 Wochen. Top-10-Verkäufer Deutschlands im Waschmittelbereich.</p>
+        </div>
+        <div class="erfolg-card">
+          <div class="big">250 % Zielerreichung</div>
+          <p>LKW-Aktion Wasch- &amp; Reinigungsmittel: 5 statt 1–2 Aktionen im Gebiet umgesetzt.</p>
+        </div>
+        <div class="erfolg-card">
+          <div class="big">Freiwahl statt Theke</div>
+          <p>Gillette-Klingen bei der Mehrheit der angesprochenen Edeka-Händler neu platziert – ein Konzept, nach dem niemand gefragt hatte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="gallery">
+    <div class="wrap">
+      <h2>Regale, an denen keiner vorbeiläuft.</h2>
+      <p class="hint">Echte Aufbauten aus meiner Zeit im Außendienst – von der Zweitplatzierung bis zur Aktion auf dem Parkplatz. Nächstes Mal gern in Schokolade.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item tall"><img src="pos-ariel.jpg" alt="Ariel Gondelkopf-Aufbau im Markt" loading="lazy"></div>
+        <div class="gallery-item wide"><img src="pos-lenor-lkw.jpg" alt="Lenor LKW-Verkaufsaktion" loading="lazy"></div>
+        <div class="gallery-item"><img src="pos-gillette.jpg" alt="Gillette Zweitplatzierung" loading="lazy"></div>
+        <div class="gallery-item"><img src="pos-blendamed.jpg" alt="Blend-a-med Palettenaufbau" loading="lazy"></div>
+        <div class="gallery-item"><img src="pos-lenor-mall.jpg" alt="Lenor-Aufbau im Einkaufszentrum" loading="lazy"></div>
+        <div class="gallery-item"><img src="pos-oldspice.jpg" alt="Old Spice Themenaufbau" loading="lazy"></div>
+        <div class="gallery-item"><img src="pos-oralb-2.jpg" alt="Oral-B Verkaufsaktion am Kofferraum" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEBIET -->
+  <section class="gebiet">
+    <div class="wrap">
+      <span class="kicker">Dein Revier – mein Revier</span>
+      <h2>Ein Teil des Gebiets ist für mich Heimspiel. Der Rest wird es.</h2>
+      <p class="intro-p">Ich sage lieber ehrlich, wo ich schon Kontakte habe und wo ich bei null anfange. Von Riedstadt aus liegt das Gebiet direkt an der A5 und A67.</p>
+      <div class="gebiet-grid">
+        <div class="region">
+          <span class="tag tag-home">Heimspiel</span>
+          <h3>Mannheim / Heidelberg</h3>
+          <p>Mein früheres P&amp;G-Gebiet. Die Märkte, die Marktleiter und die Wege kenne ich aus eigener Erfahrung.</p>
+        </div>
+        <div class="region">
+          <span class="tag tag-near">Nachbarschaft</span>
+          <h3>Karlsruhe</h3>
+          <p>Gleiche Handelsorganisationen wie in meinem alten Gebiet, allen voran Edeka Südwest. Die Märkte lerne ich neu kennen, die Spielregeln nicht.</p>
+        </div>
+        <div class="region">
+          <span class="tag tag-new">Neuland</span>
+          <h3>Freiburg</h3>
+          <p>Hier fange ich bei null an. Genau dafür bin ich da: weiße Flecken finden, Türen öffnen, Listungen holen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 100 TAGE -->
+  <section class="plan">
+    <div class="wrap">
+      <h2>Meine ersten 100 Tage bei nucao</h2>
+      <p class="lead">Nicht erst lange planen – aber auch nicht planlos losfahren.</p>
+      <div class="phases">
+        <div class="phase">
+          <div class="days">Tag 1–30</div>
+          <h3>Gebiet kartieren</h3>
+          <ul>
+            <li>Alle bestehenden nucao-Kunden besuchen: Regal, Platzierung, Bestand prüfen</li>
+            <li>Weiße Flecken erfassen: Welche Märkte führen nucao noch nicht?</li>
+            <li>Zielkunden nach Potenzial priorisieren – selbstständige Kaufleute mit Bio-Affinität zuerst</li>
+            <li>Mit Head of Sales und Field Marketing Ziele und Aktionskalender abstimmen</li>
+          </ul>
+          <div class="result">Ergebnis: eine priorisierte Zielkundenliste für das ganze Gebiet.</div>
+        </div>
+        <div class="phase">
+          <div class="days">Tag 31–60</div>
+          <h3>Türen öffnen</h3>
+          <ul>
+            <li>Die wichtigsten Zielkunden persönlich überzeugen und erste Listungen holen</li>
+            <li>Mit dem Trade Marketing Zweitplatzierungen und Verkostungen in Leuchtturm-Märkten umsetzen</li>
+            <li>Erfolge dokumentieren und als Referenz im nächsten Gespräch nutzen</li>
+          </ul>
+          <div class="result">Ergebnis: erste Neulistungen und sichtbare Platzierungen im Markt.</div>
+        </div>
+        <div class="phase">
+          <div class="days">Tag 61–100</div>
+          <h3>Skalieren</h3>
+          <ul>
+            <li>Besuchsrhythmus nach Potenzial und Entfernung festlegen</li>
+            <li>Schlankes Reporting zu Distribution, Neulistungen und Aktionen</li>
+            <li>Feedback aus dem Feld an Head of Sales und Marketing zurückspielen</li>
+            <li>Plan für die nächsten Monate aufstellen</li>
+          </ul>
+          <div class="result">Ergebnis: ein Gebiet, das mit klarem Plan wächst.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECKEN & KANTEN -->
+  <section class="kanten">
+    <div class="wrap">
+      <span class="kicker">Ihr wolltet Ecken und Kanten</span>
+      <h2>Hier sind meine.</h2>
+      <p class="intro-p">Perfekt ist niemand. Diese drei Eigenschaften bringe ich mit – im Außendienst sind sie meistens ein Vorteil.</p>
+      <div class="kanten-grid">
+        <div class="kante">
+          <h3>Ungeduldig</h3>
+          <p>Wenn ein Marktleiter „nächsten Monat“ sagt, frage ich, ob nicht auch nächste Woche geht. Ich lerne aber, dass nicht jeder mein Tempo hat.</p>
+        </div>
+        <div class="kante">
+          <h3>Direkt</h3>
+          <p>Ich spreche Dinge offen an. Händler schätzen das. Intern achte ich darauf, trotzdem das richtige Fingerspitzengefühl zu haben.</p>
+        </div>
+        <div class="kante">
+          <h3>Begeistert redselig</h3>
+          <p>Wenn mich ein Produkt überzeugt, erzähle ich gern ausführlich davon. Im Kundengespräch heißt das für mich: erst zuhören, dann erzählen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section>
+    <div class="wrap">
+      <div class="cv-cta">
+        <h2>Der ganze Werdegang, kompakt auf zwei Seiten.</h2>
+        <p>Stationen, Zahlen, Zertifizierungen – alles Weitere steht im Lebenslauf.</p>
+        <a href="./Lebenslauf_Marc_Webersdorfer.pdf" target="_blank" rel="noopener" class="btn btn-berry">Lebenslauf laden</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="contact" id="kontakt">
+    <div class="wrap">
+      <h2>Let's talk 🤝</h2>
+      <p class="tag">Ich freue mich darauf, nucao im Südwesten ins Regal zu bringen.</p>
+      <div class="cta-row">
+        <a href="mailto:marcwebersdorfer@hotmail.de" class="btn btn-berry">E-Mail schreiben</a>
+        <a href="https://www.linkedin.com/in/marc-webersdorfer" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      </div>
+      <div class="details">
+        Riedstadt · +49 177 7932783 · marcwebersdorfer@hotmail.de
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Marc Webersdorfer · Bewerbung als Field Sales Manager bei nucao
+  </footer>
+
+</body>
+</html>
