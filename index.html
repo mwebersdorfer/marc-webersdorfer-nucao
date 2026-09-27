@@ -20,6 +20,8 @@
     --plum-deep:#5A1A53;
     --pink:#FFA6FF;
     --rose:#F9D6F3;
+    --hero-pink:#FFC9EF;
+    --raspberry:#E6234D;
     --white:#FFFFFF;
     --maxw:940px;
   }
@@ -59,33 +61,34 @@
   .btn-berry{background:var(--plum);color:var(--white);}
   .btn-sand{background:var(--pink);color:var(--cocoa);}
   .btn-outline{background:transparent;color:var(--white);border:2px solid var(--white);}
+  .btn-outline-plum{background:transparent;color:var(--plum);border:2px solid var(--plum);}
 
   /* ---------- HERO ---------- */
-  .hero{background:var(--plum);color:var(--white);padding:60px 0 90px;position:relative;overflow:hidden;}
+  .hero{background:var(--hero-pink);color:var(--raspberry);padding:60px 0 90px;position:relative;overflow:hidden;}
   .hero::before{
     content:"";position:absolute;inset:0;pointer-events:none;
     background:
-      radial-gradient(circle at 88% 12%, rgba(255,166,255,.30), transparent 45%),
-      radial-gradient(circle at 6% 85%, rgba(56,29,18,.35), transparent 40%);
+      radial-gradient(circle at 88% 12%, rgba(255,255,255,.35), transparent 45%),
+      radial-gradient(circle at 6% 85%, rgba(255,166,255,.35), transparent 40%);
   }
   .hero .inner{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);align-items:center;gap:20px;min-height:440px;}
   .hero-copy{position:relative;z-index:3;padding:10px 0;}
   .hero-portrait{position:relative;align-self:stretch;min-height:390px;z-index:2;}
-  .hero-portrait::before{content:"";position:absolute;width:310px;height:310px;border-radius:48% 52% 62% 38% / 42% 40% 60% 58%;background:var(--pink);right:-65px;top:20px;transform:rotate(10deg);opacity:.96;}
-  .hero-portrait::after{content:"";position:absolute;width:230px;height:170px;border-radius:58% 42% 38% 62% / 48% 55% 45% 52%;background:var(--cocoa);right:155px;bottom:0;transform:rotate(-10deg);opacity:.9;}
-  .hero-portrait img{position:absolute;z-index:2;right:-30px;bottom:-75px;width:min(512px,50vw);max-width:none;height:auto;display:block;filter:drop-shadow(0 14px 18px rgba(20,10,5,.25));}
-  .hero .eyebrow{margin-bottom:24px;}
+  .hero-portrait::before{content:"";position:absolute;width:310px;height:310px;border-radius:48% 52% 62% 38% / 42% 40% 60% 58%;background:var(--raspberry);right:-65px;top:20px;transform:rotate(10deg);opacity:.96;}
+  .hero-portrait::after{content:"";position:absolute;width:230px;height:170px;border-radius:58% 42% 38% 62% / 48% 55% 45% 52%;background:var(--plum);right:155px;bottom:0;transform:rotate(-10deg);opacity:.9;}
+  .hero-portrait img{position:absolute;z-index:2;right:-30px;bottom:-96px;width:min(512px,50vw);max-width:none;height:auto;display:block;}
+  .hero .eyebrow{margin-bottom:24px;background:var(--plum);color:var(--white);}
   .hero h1{font-size:clamp(2.2rem,5.2vw,3.5rem);font-weight:700;max-width:640px;}
-  .hero h1 em{font-style:normal;color:var(--pink);}
+  .hero h1 em{font-style:normal;color:var(--plum);}
   .hero .sub{
     font-family:'Red Hat Display',sans-serif;font-weight:500;
     font-size:clamp(1.05rem,2.2vw,1.25rem);
-    color:var(--rose);margin-top:20px;max-width:540px;
+    color:var(--raspberry);margin-top:20px;max-width:540px;
   }
   .hero .cta-row{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;}
 
   /* wavy chocolate-bar edge */
-  .scallop{position:relative;height:34px;background:var(--plum);}
+  .scallop{position:relative;height:34px;background:var(--hero-pink);}
   .scallop::after{
     content:"";position:absolute;left:0;right:0;bottom:0;height:34px;
     background:radial-gradient(circle at 10px 0, transparent 12px, var(--sand) 13px) 0 -6px / 40px 40px repeat-x;
@@ -194,7 +197,7 @@
     .gallery-item.wide,.gallery-item:last-child{grid-column:span 2;}
     .hero .inner{grid-template-columns:1fr;gap:6px;min-height:0;}
     .hero-portrait{min-height:310px;margin-top:10px;}
-    .hero-portrait img{width:min(390px,88vw);right:-35px;bottom:-90px;}
+    .hero-portrait img{width:min(390px,88vw);right:-35px;bottom:-112px;}
     .hero-portrait::before{width:240px;height:240px;right:-55px;top:18px;}
     .hero-portrait::after{width:180px;height:125px;right:120px;bottom:10px;}
     .hero .cta-row{flex-direction:column;align-items:flex-start;}
@@ -212,8 +215,8 @@
         <h1>Ich mache nucao im Südwesten <em>sichtbar.</em></h1>
         <div class="sub">25+ Jahre FMCG-Vertrieb · 12 Jahre Field Sales direkt am Regal · Snack- und Süßwaren-Herkunft inklusive.</div>
         <div class="cta-row">
-          <a href="#erfolge" class="btn btn-sand">Was ich geschafft habe</a>
-          <a href="#kontakt" class="btn btn-outline">Let's talk</a>
+          <a href="#erfolge" class="btn btn-berry">Was ich geschafft habe</a>
+          <a href="#kontakt" class="btn btn-outline-plum">Let's talk</a>
         </div>
       </div>
       <div class="hero-portrait">
